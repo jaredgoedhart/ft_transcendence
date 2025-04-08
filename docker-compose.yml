@@ -1,0 +1,54 @@
+# PROJECT ROOT/docker-compose.yml
+#
+# This docker-compose file defines the services for the application:
+# - Backend: Runs the backend service with necessary environment variables and volumes.
+# - Frontend: Runs the frontend service, dependent on the backend.
+# - Nginx: Configures Nginx as a reverse proxy for frontend and backend, exposing HTTP/HTTPS ports.
+
+
+version: "3.8"
+
+services:
+  backend:
+    build: ./backend
+    container_name: transcendence_backend
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./db:/app/db
+      - ./uploads:/app/uploads
+      - ./docker/nginx/ssl:/etc/nginx/ssl
+
+    environment:
+      - NODE_ENV=production
+      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
+      - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET}
+      - JWT_SECRET=${JWT_SECRET}
+      - CORS_ORIGIN=${CORS_ORIGIN}
+    command: node dist/index.js
+    restart: always
+
+  frontend:
+    build: ./frontend
+    container_name: transcendence_frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    environment:
+      - REACT_APP_API_URL=https://localhost
+      - REACT_APP_GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
+      - HTTPS=true
+    command: npm start
+    stdin_open: true
+    tty: true
+
+  nginx:
+    build: docker/nginx/
+    container_name: transcendence_nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - backend
+      - frontend

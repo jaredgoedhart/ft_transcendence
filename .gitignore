@@ -1,0 +1,9 @@
+.env
+.DS_Store
+frontend/.env
+db
+dist/
+.idea
+build/
+back_up/
+node_modules/
