@@ -101,4 +101,8 @@ async function get_online_status(_request: FastifyRequest, reply: FastifyReply):
 }
 
 
-export default { handle_status_connection, get_online_status };
+export default
+{
+    handle_status_connection,
+    get_online_status
+};

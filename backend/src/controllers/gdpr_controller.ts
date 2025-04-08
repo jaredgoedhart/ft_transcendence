@@ -180,4 +180,9 @@ async function delete_account(request: FastifyRequest, reply: FastifyReply): Pro
 }
 
 
-export default { get_user_data, anonymize_user, delete_account };
+export default
+{
+    get_user_data,
+    anonymize_user,
+    delete_account
+};

@@ -11,10 +11,12 @@ third-party authentication option for users.
 import React, { useEffect, useState } from "react";
 import { use_authentication } from "../../context/AuthenticationContext";
 
+
 interface GoogleSignInProperties
 {
     on_success: () => void;
 }
+
 
 /**
  * Component for handling Google authentication
@@ -124,7 +126,9 @@ const GoogleSignIn: React.FC<GoogleSignInProperties> = ({ on_success }) =>
     );
 };
 
+
 export default GoogleSignIn;
+
 
 /**
  * Extend Window interface to include Google Identity Services

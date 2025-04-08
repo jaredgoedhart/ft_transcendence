@@ -12,7 +12,7 @@ import React, { useState } from "react";
 import { use_authentication } from "../../context/AuthenticationContext";
 
 
-interface RegisterFormProps
+interface RegisterFormProperties
 {
     on_register_success: () => void;
 }
@@ -21,7 +21,7 @@ interface RegisterFormProps
 /**
  * Component for user registration
  */
-const RegisterForm: React.FC<RegisterFormProps> = ({ on_register_success }) =>
+const RegisterForm: React.FC<RegisterFormProperties> = ({ on_register_success }) =>
 {
     const [username, set_username] = useState<string>("");
     const [email, set_email] = useState<string>("");

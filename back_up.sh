@@ -110,7 +110,7 @@ files=(
     ".env"
     ".env.example"
     ".gitignore"
-    "ft_transcendenceSubject.pdf"
+    "ft_transcendence_english_subject_2025.pdf"
 )
 
 

@@ -98,7 +98,8 @@ const RenderGame = ({
         ping_pong_game.fillRect(0, 0, GameLogic.CANVAS_WIDTH, GameLogic.CANVAS_HEIGHT);
 
         /* DRAW MIDDLE LINE (ONLY IN 2-PLAYER MODE) */
-        if (!is_multiplayer) {
+        if (!is_multiplayer)
+        {
             ping_pong_game.setLineDash([5, 15]);
             ping_pong_game.beginPath();
             ping_pong_game.moveTo(GameLogic.CANVAS_WIDTH / 2, 0);

@@ -28,23 +28,26 @@ async function match_routes(fastify: FastifyInstance): Promise<void>
 
         /* CREATE A NEW MATCH */
         protected_routes.post("/", (request: FastifyRequest, reply: FastifyReply) =>
-            match_controller.create_match(request, reply));
+        {
+            match_controller.create_match(request, reply);
+        });
 
         /* UPDATE MATCH RESULT */
         protected_routes.put("/result", (request: FastifyRequest, reply: FastifyReply) =>
-            match_controller.update_match_result(request, reply));
+        {
+            match_controller.update_match_result(request, reply);
+        });
 
         /* GET MATCH HISTORY */
         protected_routes.get("/history", (request: FastifyRequest, reply: FastifyReply) =>
-            match_controller.get_match_history(request, reply));
+        {
+            match_controller.get_match_history(request, reply);
+        });
 
         /* GET MATCH STATISTICS */
         protected_routes.get("/statistics", (request: FastifyRequest, reply: FastifyReply) =>
-            match_controller.get_match_statistics(request, reply));
-
-        protected_routes.get("/simple-test", (request: FastifyRequest, reply: FastifyReply) => {
-            console.log("Simple test endpoint called");
-            reply.code(200).send({ message: "Test successful", timestamp: new Date().toISOString() });
+        {
+            match_controller.get_match_statistics(request, reply);
         });
 
     }, { prefix: "/api/matches" });

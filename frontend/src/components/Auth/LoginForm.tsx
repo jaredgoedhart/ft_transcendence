@@ -10,13 +10,12 @@ It manages form state, validation, and error handling.
 */
 
 
-
 import React, { useState } from "react";
 import { use_authentication } from "../../context/AuthenticationContext";
 import GoogleSignIn from "./GoogleSignIn";
 
 
-interface LoginFormProps
+interface LoginFormProperties
 {
     on_login_success: () => void;
 }
@@ -25,7 +24,7 @@ interface LoginFormProps
 /**
  * Component for user login
  */
-const LoginForm: React.FC<LoginFormProps> = ({ on_login_success }) =>
+const LoginForm: React.FC<LoginFormProperties> = ({ on_login_success }) =>
 {
     const [identifier, set_identifier] = useState<string>("");
     const [password, set_password] = useState<string>("");

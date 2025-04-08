@@ -82,7 +82,8 @@ const UserStats: React.FC<UserStatsProperties> = ({ user_id }) =>
      */
     const prepare_win_loss_data = () =>
     {
-        if (!statistics) return [];
+        if (!statistics)
+            return [];
 
         return [
             { name: "Wins", value: statistics.wins },
@@ -111,7 +112,9 @@ const UserStats: React.FC<UserStatsProperties> = ({ user_id }) =>
         {
             running_matches++;
             const is_winner = match.winner_id === user_id;
-            if (is_winner) running_wins++;
+
+            if (is_winner)
+                running_wins++;
 
             const current_win_rate = (running_wins / running_matches) * 100;
 
@@ -129,12 +132,14 @@ const UserStats: React.FC<UserStatsProperties> = ({ user_id }) =>
     /**
      * Prepares data for score margin analysis
      */
-    const prepare_margin_data = () => {
+    const prepare_margin_data = () =>
+    {
         if (!match_history || match_history.length === 0)
             return [];
 
 
-        const margin_categories = [
+        const margin_categories =
+        [
             { margin_type: "Decisive Win", count: 0 },
             { margin_type: "Close Win", count: 0 },
             { margin_type: "Close Loss", count: 0 },

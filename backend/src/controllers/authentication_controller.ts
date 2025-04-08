@@ -44,6 +44,7 @@ async function register(request: FastifyRequest, reply: FastifyReply): Promise<v
 
         /* CHECK IF DISPLAY NAME IS ALREADY TAKEN */
         const display_name_taken = await user_service.is_display_name_taken(display_name, 0);
+
         if (display_name_taken)
         {
             reply.code(409).send({ error: "Display name is already taken" });
@@ -154,4 +155,9 @@ async function login(request: FastifyRequest, reply: FastifyReply): Promise<void
 }
 
 
-export default { register, login, two_factor_login };
+export default
+{
+    register,
+    login,
+    two_factor_login
+};

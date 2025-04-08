@@ -14,7 +14,6 @@ These definitions allow TypeScript to recognize and validate the usage of these 
 */
 
 
-
 declare module "speakeasy"
 {
     export interface GeneratedSecret

@@ -70,6 +70,7 @@ async function update_user_profile(request: FastifyRequest, reply: FastifyReply)
         if (display_name && display_name !== user.display_name)
         {
             const is_display_name_taken = await user_service.is_display_name_taken(display_name, user_id);
+
             if (is_display_name_taken)
             {
                 reply.code(409).send({ error: "Display name is already taken" });
@@ -114,4 +115,8 @@ async function update_user_profile(request: FastifyRequest, reply: FastifyReply)
 }
 
 
-export default { get_profile: get_user_profile, update_profile: update_user_profile };
+export default
+{
+    get_profile: get_user_profile,
+    update_profile: update_user_profile
+};

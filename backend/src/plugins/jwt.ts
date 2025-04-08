@@ -7,7 +7,6 @@ This is important because it allows users to stay logged in without saving sensi
 */
 
 
-
 import fp from "fastify-plugin";
 import { FastifyInstance } from "fastify";
 import fastifyJwt, { FastifyJWTOptions } from "@fastify/jwt";

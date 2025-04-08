@@ -268,4 +268,5 @@ const GDPRSettings: React.FC = () =>
     );
 };
 
+
 export default GDPRSettings;

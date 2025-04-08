@@ -20,7 +20,7 @@ import GDPRSettings from "./GDPRSettings";
 
 interface UserProfileProperties
 {
-    user_id?: number; // Optioneel: als niet opgegeven, wordt de ingelogde gebruiker getoond
+    user_id?: number;
 }
 
 

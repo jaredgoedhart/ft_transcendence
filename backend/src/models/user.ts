@@ -94,4 +94,5 @@ function initialize_user_table(): void
     });
 }
 
+
 initialize_user_table();

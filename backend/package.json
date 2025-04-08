@@ -1,7 +1,7 @@
 {
   "name": "ft_transcendence-backend",
   "version": "1.0.0",
-  "description": "Backend voor het ft_transcendence project",
+  "description": "Backend for the ft_transcendence project",
   "main": "dist/index.js",
 
   "scripts":

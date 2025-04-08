@@ -37,18 +37,17 @@ function initialize_database(): sqlite3.Database
 
     const database_path: string = join(database_directory, "transcendence.sqlite");
 
-    const database: sqlite3.Database = new sqlite3.Database(database_path, (error) =>
+    try
     {
-        if (error)
-        {
-            console.error("Failed to connect to the SQLite database:", error.message);
-            throw error;
-        }
-
+        const database: sqlite3.Database = new sqlite3.Database(database_path);
         console.log("Connected to the SQLite database at", database_path);
-    });
-
-    return database;
+        return database;
+    }
+    catch (error: any)
+    {
+        console.error("Failed to connect to the SQLite database:", error.message);
+        throw error;
+    }
 }
 
 

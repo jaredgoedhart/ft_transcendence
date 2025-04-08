@@ -21,15 +21,21 @@ async function authentication_routes(fastify: FastifyInstance): Promise<void>
 {
     /* REGISTER USER */
     fastify.post("/api/auth/register", (request: FastifyRequest, reply: FastifyReply) =>
-        authentication_controller.register(request, reply));
+    {
+        authentication_controller.register(request, reply);
+    });
 
     /* LOGIN USER */
     fastify.post("/api/auth/login", (request: FastifyRequest, reply: FastifyReply) =>
-        authentication_controller.login(request, reply));
+    {
+        authentication_controller.login(request, reply);
+    });
 
     /* GOOGLE AUTHENTICATION */
     fastify.post("/api/auth/google", (request: FastifyRequest, reply: FastifyReply) =>
-        google_auth_controller.google_auth(request, reply));
+    {
+        google_auth_controller.google_auth(request, reply);
+    });
 
     /* PROTECTED ROUTES REQUIRING AUTHENTICATION */
     fastify.register(async (protected_routes: FastifyInstance) =>
@@ -42,7 +48,9 @@ async function authentication_routes(fastify: FastifyInstance): Promise<void>
 
         /* 2FA LOGIN STEP */
         protected_routes.get("/two-factor", (request: FastifyRequest, reply: FastifyReply) =>
-            authentication_controller.two_factor_login(request, reply));
+        {
+            authentication_controller.two_factor_login(request, reply);
+        });
 
     }, { prefix: "/api/auth" });
 }

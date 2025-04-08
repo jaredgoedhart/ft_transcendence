@@ -159,4 +159,10 @@ async function get_match_statistics(request: FastifyRequest, reply: FastifyReply
 }
 
 
-export default { create_match, update_match_result, get_match_history, get_match_statistics };
+export default
+{
+    create_match,
+    update_match_result,
+    get_match_history,
+    get_match_statistics
+};

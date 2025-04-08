@@ -110,7 +110,7 @@ export interface GameInvite
     id: number;
     sender_id: number;
     recipient_id: number;
-    game_type: 'pong' | 'tictactoe';
+    game_type: 'pong';
     status: 'pending' | 'accepted' | 'declined' | 'expired';
     created_at: string;
     expires_at: string;

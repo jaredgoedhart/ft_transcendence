@@ -35,11 +35,15 @@ async function user_routes(fastify: FastifyInstance): Promise<void>
 
         /* GET USER PROFILE */
         protected_routes.get("/profile", (request: FastifyRequest, reply: FastifyReply) =>
-            user_controller.get_profile(request, reply));
+        {
+            user_controller.get_profile(request, reply);
+        });
 
         /* UPDATE USER PROFILE */
         protected_routes.put("/profile", (request: FastifyRequest, reply: FastifyReply) =>
-            user_controller.update_profile(request, reply));
+        {
+            user_controller.update_profile(request, reply);
+        });
 
         /* UPLOAD AVATAR */
         protected_routes.post("/avatar",
@@ -47,7 +51,9 @@ async function user_routes(fastify: FastifyInstance): Promise<void>
                 config: {rawBody: true}
             },
             (request: FastifyRequest, reply: FastifyReply) =>
-                user_avatar_controller.upload_avatar(request, reply));
+            {
+                user_avatar_controller.upload_avatar(request, reply);
+            });
 
     }, { prefix: "/api/user" });
 }

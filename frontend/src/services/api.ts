@@ -15,12 +15,12 @@ import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse, InternalAxiosR
  * Base API configuration
  */
 const api_configuration: AxiosRequestConfig<any> =
-    {
-        baseURL: process.env.REACT_APP_API_URL || "https://localhost",
-        headers: { "Content-Type": "application/json" },
-        timeout: 10000,
-        withCredentials: true
-    };
+{
+    baseURL: process.env.REACT_APP_API_URL || "https://localhost",
+    headers: { "Content-Type": "application/json" },
+    timeout: 10000,
+    withCredentials: true
+};
 
 
 /**
@@ -66,13 +66,13 @@ api_client.interceptors.response.use((response) =>
         {
             console.error(`API Request Error: No response received for ${error.config?.url}`, error);
 
-            // Check if the error might be related to HTTPS issues
             if (error.message && (
                 error.message.includes("certificate") ||
                 error.message.includes("SSL") ||
                 error.message.includes("self signed") ||
                 error.message.includes("unable to verify")
-            )) {
+            ))
+            {
                 console.error("This appears to be an HTTPS/SSL certificate issue. Please verify your certificates are properly configured.");
             }
         }

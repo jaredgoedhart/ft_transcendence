@@ -140,9 +140,11 @@ const AppContent = () =>
             (player1.user_id === user.id) ||
             (player2.user_id === user.id);
 
-        if (!is_user_involved) return;
+        if (!is_user_involved)
+            return;
 
-        if (is_match_saving) return;
+        if (is_match_saving)
+            return;
 
         set_is_match_saving(true);
 
@@ -156,7 +158,8 @@ const AppContent = () =>
         const final_p2_score = winner_is_player1 ? Math.min(player1_score, player2_score) : Math.max(player1_score, player2_score);
 
         match_api.create_match(opponent_id, "Tournament")
-            .then(response => {
+            .then(response =>
+            {
                 const match_id = response.data.match.id;
                 return match_api.update_match_result(match_id, final_p1_score, final_p2_score);
             })
@@ -266,7 +269,8 @@ const AppContent = () =>
         set_last_match(updated_match);
         set_round_winner(winner);
 
-        set_completed_matches(prev_matches => [
+        set_completed_matches(prev_matches =>
+        [
             ...prev_matches,
             {
                 player1: updated_match.player1,

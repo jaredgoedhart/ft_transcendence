@@ -7,7 +7,6 @@ This is important for security when the frontend and backend are on different do
 */
 
 
-
 import fp from "fastify-plugin";
 import fastifyCors from "@fastify/cors";
 import { FastifyInstance } from "fastify";

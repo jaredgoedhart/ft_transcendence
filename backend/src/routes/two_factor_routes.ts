@@ -19,7 +19,9 @@ async function two_factor_routes(fastify: FastifyInstance): Promise<void>
 {
     /* 2FA TOKEN VERIFICATION (PUBLIC ROUTE) */
     fastify.post("/api/auth/verify-2fa", (request: FastifyRequest, reply: FastifyReply) =>
-        two_factor_controller.verify_2fa_token(request, reply));
+    {
+        two_factor_controller.verify_2fa_token(request, reply);
+    });
 
     /* PROTECTED ROUTES THAT REQUIRE AUTHENTICATION */
     fastify.register(async (protected_routes: FastifyInstance) =>
@@ -32,15 +34,21 @@ async function two_factor_routes(fastify: FastifyInstance): Promise<void>
 
         /* GENERATE 2FA SETUP */
         protected_routes.get("/setup", (request: FastifyRequest, reply: FastifyReply) =>
-            two_factor_controller.generate_2fa_setup(request, reply));
+        {
+            two_factor_controller.generate_2fa_setup(request, reply);
+        });
 
         /* ENABLE 2FA */
         protected_routes.post("/enable", (request: FastifyRequest, reply: FastifyReply) =>
-            two_factor_controller.enable_2fa(request, reply));
+        {
+            two_factor_controller.enable_2fa(request, reply);
+        });
 
         /* DISABLE 2FA */
         protected_routes.post("/disable", (request: FastifyRequest, reply: FastifyReply) =>
-            two_factor_controller.disable_2fa(request, reply));
+        {
+            two_factor_controller.disable_2fa(request, reply);
+        });
 
     }, { prefix: "/api/2fa" });
 }

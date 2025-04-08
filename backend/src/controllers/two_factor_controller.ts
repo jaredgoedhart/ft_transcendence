@@ -122,7 +122,6 @@ async function verify_2fa_token(request: FastifyRequest, reply: FastifyReply): P
             return;
         }
 
-        /* GENERATE JWT TOKEN - WILL BE IMPLEMENTED WITH JWT MODULE */
         const authentication_token: string = await reply.jwtSign({ id: user_id, two_factor_verified: true });
 
         reply.code(200).send({ message: "2FA verification successful", token: authentication_token });
@@ -135,4 +134,10 @@ async function verify_2fa_token(request: FastifyRequest, reply: FastifyReply): P
 }
 
 
-export default { generate_2fa_setup, enable_2fa, disable_2fa, verify_2fa_token };
+export default
+{
+    generate_2fa_setup,
+    enable_2fa,
+    disable_2fa,
+    verify_2fa_token
+};

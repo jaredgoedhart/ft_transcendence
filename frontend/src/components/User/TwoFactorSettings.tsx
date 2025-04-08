@@ -137,7 +137,8 @@ const TwoFactorSettings: React.FC = () =>
     {
         if (success_message)
         {
-            const timer = setTimeout(() => {
+            const timer = setTimeout(() =>
+            {
                 set_success_message("");
             }, 5000);
 

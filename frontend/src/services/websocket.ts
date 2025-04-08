@@ -122,6 +122,7 @@ class WebSocketService
     private handle_message(message: WebSocketMessage): void
     {
         const handlers = this.handlers.get(message.event);
+
         if (handlers)
         {
             handlers.forEach(handler => handler(message.data));
@@ -140,6 +141,7 @@ class WebSocketService
     public off(event: WebSocketEvent, handler: MessageHandler): void
     {
         const handlers = this.handlers.get(event);
+
         if (handlers)
         {
             handlers.delete(handler);
@@ -170,8 +172,8 @@ class WebSocketService
 }
 
 
-const ws_url = `${window.location.protocol === 'https:' ? 'wss:' : 'ws:'}//${window.location.host}/socket.io`;
-const websocket_service = new WebSocketService(ws_url);
+const websocket_url = `${window.location.protocol === 'https:' ? 'wss:' : 'ws:'}//${window.location.host}/socket.io`;
+const websocket_service = new WebSocketService(websocket_url);
 
 
 export default websocket_service;

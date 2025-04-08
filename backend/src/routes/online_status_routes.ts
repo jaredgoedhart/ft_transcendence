@@ -34,7 +34,9 @@ async function online_status_routes(fastify: FastifyInstance): Promise<void>
 
         /* GET ONLINE USERS */
         protected_routes.get("/", (request: FastifyRequest, reply: FastifyReply) =>
-            online_status_controller.get_online_status(request, reply));
+        {
+            online_status_controller.get_online_status(request, reply);
+        });
 
     }, { prefix: "/api/status" });
 }

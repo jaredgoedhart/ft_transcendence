@@ -29,23 +29,33 @@ async function friendship_routes(fastify: FastifyInstance): Promise<void>
 
         /* GET ALL FRIENDS */
         protected_routes.get("/", (request: FastifyRequest, reply: FastifyReply) =>
-            friendship_controller.get_friends(request, reply));
+        {
+            friendship_controller.get_friends(request, reply);
+        });
 
         /* SEND FRIEND REQUEST */
         protected_routes.post("/request", (request: FastifyRequest, reply: FastifyReply) =>
-            friendship_controller.send_friend_request(request, reply));
+        {
+            friendship_controller.send_friend_request(request, reply);
+        });
 
         /* ACCEPT FRIEND REQUEST */
         protected_routes.post("/accept", (request: FastifyRequest, reply: FastifyReply) =>
-            friendship_controller.accept_friend_request(request, reply));
+        {
+            friendship_controller.accept_friend_request(request, reply);
+        });
 
         /* REJECT FRIEND REQUEST */
         protected_routes.post("/reject", (request: FastifyRequest, reply: FastifyReply) =>
-            friendship_controller.reject_friend_request(request, reply));
+        {
+            friendship_controller.reject_friend_request(request, reply);
+        });
 
         /* REMOVE FRIENDSHIP */
         protected_routes.delete("/:friendship_id", (request: FastifyRequest, reply: FastifyReply) =>
-            friendship_controller.remove_friendship(request, reply));
+        {
+            friendship_controller.remove_friendship(request, reply);
+        });
 
     }, { prefix: "/api/friends" });
 }

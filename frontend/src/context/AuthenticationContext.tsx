@@ -200,12 +200,12 @@ export const AuthenticationProvider: React.FC<AuthenticationProviderProps> = ({ 
         try
         {
             const response = await fetch("/api/status",
+            {
+                headers:
                 {
-                    headers:
-                    {
-                        "Authorization": `Bearer ${localStorage.getItem("token")}`
-                    }
-                });
+                    "Authorization": `Bearer ${localStorage.getItem("token")}`
+                }
+            });
 
             if (response.ok)
             {
@@ -256,13 +256,13 @@ export const AuthenticationProvider: React.FC<AuthenticationProviderProps> = ({ 
 
             if (response.data.user && response.data.user.id)
             {
-                set_online_users(prev =>
+                set_online_users(previous =>
                 {
-                    if (!prev.includes(response.data.user.id))
+                    if (!previous.includes(response.data.user.id))
                     {
-                        return [...prev, response.data.user.id];
+                        return [...previous, response.data.user.id];
                     }
-                    return prev;
+                    return previous;
                 });
             }
 
@@ -296,13 +296,13 @@ export const AuthenticationProvider: React.FC<AuthenticationProviderProps> = ({ 
 
             if (response.data.user && response.data.user.id)
             {
-                set_online_users(prev =>
+                set_online_users(previous =>
                 {
-                    if (!prev.includes(response.data.user.id))
+                    if (!previous.includes(response.data.user.id))
                     {
-                        return [...prev, response.data.user.id];
+                        return [...previous, response.data.user.id];
                     }
-                    return prev;
+                    return previous;
                 });
             }
 
@@ -337,13 +337,13 @@ export const AuthenticationProvider: React.FC<AuthenticationProviderProps> = ({ 
             /* INITIALIZE ONLINE STATUS CONNECTION */
             initialize_online_status(response.data.token);
 
-            set_online_users(prev =>
+            set_online_users(previous =>
             {
-                if (!prev.includes(user_id))
+                if (!previous.includes(user_id))
                 {
-                    return [...prev, user_id];
+                    return [...previous, user_id];
                 }
-                return prev;
+                return previous;
             });
 
             return true;
@@ -424,13 +424,13 @@ export const AuthenticationProvider: React.FC<AuthenticationProviderProps> = ({ 
 
             if (data.user && data.user.id)
             {
-                set_online_users(prev =>
+                set_online_users(previous =>
                 {
-                    if (!prev.includes(data.user.id))
+                    if (!previous.includes(data.user.id))
                     {
-                        return [...prev, data.user.id];
+                        return [...previous, data.user.id];
                     }
-                    return prev;
+                    return previous;
                 });
             }
         }

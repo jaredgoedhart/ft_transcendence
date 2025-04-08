@@ -29,15 +29,21 @@ async function gdpr_routes(fastify: FastifyInstance): Promise<void>
 
         /* GET USER'S PERSONAL DATA (DATA PORTABILITY) */
         protected_routes.get("/data", (request: FastifyRequest, reply: FastifyReply) =>
-            gdpr_controller.get_user_data(request, reply));
+        {
+            gdpr_controller.get_user_data(request, reply);
+        });
 
         /* ANONYMIZE USER ACCOUNT */
         protected_routes.post("/anonymize", (request: FastifyRequest, reply: FastifyReply) =>
-            gdpr_controller.anonymize_user(request, reply));
+        {
+            gdpr_controller.anonymize_user(request, reply);
+        });
 
         /* DELETE USER ACCOUNT */
         protected_routes.post("/delete-account", (request: FastifyRequest, reply: FastifyReply) =>
-            gdpr_controller.delete_account(request, reply));
+        {
+            gdpr_controller.delete_account(request, reply);
+        });
 
     }, { prefix: "/api/gdpr" });
 }
