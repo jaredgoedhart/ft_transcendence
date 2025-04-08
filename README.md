@@ -13,7 +13,6 @@ ft_transcendence is a modern web-based Pong game platform that brings the classi
   - 3-Player unique gameplay on specialized boards
 - **User Management**: Register, log in, customize profiles
 - **Social Features**: Friends list, online status tracking
-- **Real-time Chat**: Direct messaging and game invitations
 - **Game Stats**: Comprehensive match history and performance analytics
 
 ## 🛠️ Technical Stack
@@ -22,7 +21,6 @@ ft_transcendence is a modern web-based Pong game platform that brings the classi
 - **Framework**: Fastify with Node.js
 - **Database**: SQLite for data persistence
 - **Authentication**: JWT tokens with optional 2FA security
-- **Real-time Communication**: WebSockets for live gameplay and chat
 - **Security**: HTTPS, password hashing, XSS protection
 
 ### Frontend
@@ -82,7 +80,6 @@ Experience a unique twist on Pong with three players simultaneously controlling 
 
 - **Movement**: WASD keys or arrow keys
 - **Game Options**: Access via in-game menu
-- **Chat**: Toggle with Tab key
 - **Tournament Navigation**: On-screen buttons for match progression
 
 ## 🔐 Security Features
