@@ -130,8 +130,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 🙏 Acknowledgments
 
-The 42 Network for the project inspiration
-The Pong game (1972) for the classic gameplay concept
-The open-source community for the tools and libraries used
+The 42 Network for the project inspiration.
+The Pong game (1972) for the classic gameplay concept.
+The open-source community for the tools and libraries used.
 
 This project was developed as part of the 42 School curriculum.
