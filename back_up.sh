@@ -109,6 +109,7 @@ files=(
     "package.json"
     ".env"
     ".env.example"
+    ".gitignore"
     "ft_transcendenceSubject.pdf"
 )
 

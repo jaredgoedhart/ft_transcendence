@@ -58,7 +58,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ on_register_success }) =>
             return false;
         }
 
-        if (!/^[a-zA-Z0-9_-]+$/.test(username))
+        if (!/^[\w\u00C0-\u017F-]+$/.test(username))
         {
             set_error("Username can only contain letters, numbers, hyphens and underscores");
             return false;
