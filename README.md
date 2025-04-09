@@ -120,6 +120,8 @@ ft_transcendence/
 
 The project implements the following modules as specified in the subject requirements. A total of 7 major modules (or equivalent combinations of minor modules) have been completed.
 
+[See project guide](./resources/projectGuide)
+
 ### Major Modules
 - **1,0 Use a Framework to Build the Backend** ✅  
   Implemented using Fastify with Node.js for efficient server-side operations.

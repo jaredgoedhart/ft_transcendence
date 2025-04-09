@@ -8,7 +8,7 @@
 
 
 # Create the "back_up" directory if it does not exist
-UPLOAD_DIRECTORY="./back_up"
+UPLOAD_DIRECTORY="./resources/back_up"
 
 if [ ! -d "$UPLOAD_DIRECTORY" ]
 then
@@ -110,7 +110,7 @@ files=(
     ".env"
     ".env.example"
     ".gitignore"
-    "ft_transcendence_english_subject_2025.pdf"
+    "resources/ft_transcendence_english_subject_2025.pdf"
 )
 
 
