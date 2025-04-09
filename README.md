@@ -151,18 +151,15 @@ The project implements the following modules as specified in the subject require
 
 ## 📄 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
 
 ## 👥 Authors
 
 - [Luca Goddijn](https://github.com/DontCallMeLuca)
-- Oleksii Volzhev
+- [Oleksii Volzhev](https://github.com/Playstayman)
 - [Jared Goedhart](https://github.com/jaredgoedhart)
 
 ## 🙏 Acknowledgments
 
-The 42 Network for the project inspiration.
-The Pong game (1972) for the classic gameplay concept.
-The open-source community for the tools and libraries used.
-
-This project was developed as part of the 42 School curriculum.
+- The Pong game (1972) for the classic gameplay concept.
+- The open-source community for the tools and libraries used.
