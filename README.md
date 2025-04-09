@@ -57,12 +57,12 @@ Access the application at: https://localhost
 ## 📷 Screenshots
 
 <div align="center">
-  <img src="screenshots/login_and_registration/Login_Screen.png" alt="Login Screen" width="400">
-  <img src="screenshots/play_Game/Games.png" alt="Game Selection" width="400">
-  <img src="screenshots/play_Game/1V1_Game.png" alt="1v1 Game" width="400">
-  <img src="screenshots/play_Game/Tournament_Dashboard.png" alt="Tournament Dashboard" width="400">
-  <img src="screenshots/play_Game/3-Player_Multiplayer_Game.png" alt="3-Player Game" width="400">
-  <img src="screenshots/friends/Friends.png" alt="Friends Management" width="400">
+  <img src="resources/screenshots/login_and_registration/Login_Screen.png" alt="Login Screen" width="400">
+  <img src="resources/screenshots/play_Game/Games.png" alt="Game Selection" width="400">
+  <img src="resources/screenshots/play_Game/1V1_Game.png" alt="1v1 Game" width="400">
+  <img src="resources/screenshots/play_Game/Tournament_Dashboard.png" alt="Tournament Dashboard" width="400">
+  <img src="resources/screenshots/play_Game/3-Player_Multiplayer_Game.png" alt="3-Player Game" width="400">
+  <img src="resources/screenshots/friends/Friends.png" alt="Friends Management" width="400">
 </div>
 
 ## 🎮 Game Modes
