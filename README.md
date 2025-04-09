@@ -116,6 +116,39 @@ ft_transcendence/
 └── README.md                # This file
 ```
 
+## 📈 Modules
+
+The project implements the following modules as specified in the subject requirements. A total of 7 major modules (or equivalent combinations of minor modules) have been completed.
+
+### Major Modules
+- **1,0 Use a Framework to Build the Backend** ✅  
+  Implemented using Fastify with Node.js for efficient server-side operations.
+
+- **2,0 Standard User Management** ✅  
+  Complete user registration, authentication, and profile management system.
+
+- **3,0 Implement Two-Factor Authentication (2FA) and JWT** ✅  
+  Enhanced security with optional 2FA and JWT token-based authentication.
+
+- **4,0 Implement Remote Authentication** ✅  
+  Support for third-party authentication providers including Google OAuth.
+
+- **5,0 Multiple Players** ✅  
+  Unique 3-player mode with specialized game boards in addition to standard 1v1 matches.
+
+### Minor Modules (each pair counts as one Major Module)
+- **5,5 Use a Database for the Backend** ✅  
+  SQLite implementation for efficient data persistence.
+
+- **6,0 Expanding Browser Compatibility** ✅  
+  Cross-browser testing ensures compatibility with all modern browsers.
+
+- **6,5 User and Game Stats Dashboards** ✅  
+  Comprehensive statistics tracking and visualization for player performance.
+
+- **7,0 GDPR Compliance Options** ✅  
+  User anonymization, local data management, and account deletion functionality.
+
 ## 📄 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
