@@ -6,5 +6,5 @@ dist/
 .idea
 build/
 back_up/
-uploads/
+uploads/avatars/
 node_modules/
