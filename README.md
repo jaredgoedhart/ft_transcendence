@@ -157,6 +157,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 - [Jared Goedhart](https://github.com/jaredgoedhart)
 - [Luca Goddijn](https://github.com/DontCallMeLuca)
+- Oleksii Volzhev
 
 ## 🙏 Acknowledgments
 
