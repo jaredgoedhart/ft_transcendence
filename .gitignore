@@ -6,4 +6,5 @@ dist/
 .idea
 build/
 back_up/
+uploads/
 node_modules/
