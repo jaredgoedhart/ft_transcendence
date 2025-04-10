@@ -78,7 +78,7 @@ Experience a unique twist on Pong with three players simultaneously controlling 
 
 ## 🕹️ Controls
 
-- **Movement**: WASD keys or arrow keys
+- **Movement**: WASD keys
 - **Game Options**: Access via in-game menu
 - **Tournament Navigation**: On-screen buttons for match progression
 
