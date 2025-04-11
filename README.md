@@ -1,11 +1,10 @@
 # ft_transcendence: Modern Web-based Pong Game Platform
 
----
+
 ## 🎮 Project Overview
 
 ft_transcendence is a modern web-based Pong game platform that brings the classic arcade experience to life with real-time multiplayer capabilities, tournaments, and social features. Built with Node.js, TypeScript, and containerized with Docker, this project demonstrates web development skills, real-time communication implementation, and secure user management.
 
----
 
 ## ✨ Features
 
@@ -18,7 +17,7 @@ ft_transcendence is a modern web-based Pong game platform that brings the classi
 - **Social Features**: Friends list, online status tracking
 - **Game Stats**: Comprehensive match history and performance analytics
 
----
+
 ## 🛠️ Technical Stack
 
 ### Backend
@@ -39,7 +38,6 @@ ft_transcendence is a modern web-based Pong game platform that brings the classi
 - **Containerization**: Docker for consistent deployment
 - **One-command Setup**: Simple launch with docker-compose
 
----
 
 ## 🚀 Getting Started
 
@@ -63,7 +61,6 @@ docker-compose up --build
 
 Access the application at: https://localhost
 
----
 
 ## 📷 Screenshots
 
@@ -76,8 +73,6 @@ Access the application at: https://localhost
   <img src="resources/screenshots/friends/Friends.png" alt="Friends Management" width="400">
 </div>
 
----
-
 ## 🎮 Game Modes
 
 ### Direct Match
@@ -89,7 +84,6 @@ Create or join tournaments with multiple players, automatic matchmaking, and pro
 ### 3-Player Multiplayer
 Experience a unique twist on Pong with three players simultaneously controlling paddles on different sides of the playing field.
 
----
 
 ## 🕹️ Controls
 
@@ -97,7 +91,6 @@ Experience a unique twist on Pong with three players simultaneously controlling 
 - **Game Options**: Access via in-game menu
 - **Tournament Navigation**: On-screen buttons for match progression
 
----
 
 ## 🔐 Security Features
 
@@ -107,7 +100,7 @@ Experience a unique twist on Pong with three players simultaneously controlling 
 - Form validation on both client and server sides
 - Optional Two-Factor Authentication
 
----
+
 ## 📚 Project Structure
 
 ```
@@ -133,9 +126,8 @@ ft_transcendence/
 ├── docker-compose.yml       # Service orchestration
 └── README.md                # This file
 ```
-*[See Docker/Nginx Configuration](./resources/modelGuide/0.0-dockerNginxConfiguration.md)*
+*[See Docker/NGINX Configuration](./resources/modelGuide/0.0-dockerNginxConfiguration.md)*
 
----
 
 ## 📈 Modules
 
@@ -170,20 +162,19 @@ The project implements the following modules as specified in the subject require
 - **7,0 [GDPR Compliance Options](resources/modelGuide/7.0-GDPR.md)** ✅  
   User anonymization, local data management, and account deletion functionality.
 
----
 
 ## 📄 License
 
 Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
 
----
+
 ## 👥 Authors
 
 - [Luca Goddijn](https://github.com/DontCallMeLuca)
 - [Oleksii Volzhev](https://github.com/Playstayman)
 - [Jared Goedhart](https://github.com/jaredgoedhart)
 
----
+
 ## 🙏 Acknowledgments
 
 - The Pong game (1972) for the classic gameplay concept.
