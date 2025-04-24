@@ -52,7 +52,7 @@ ft_transcendence is a modern web-based Pong game platform that brings the classi
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ft_transcendence.git
+git clone https://github.com/jaredgoedhart/ft_transcendence.git
 cd ft_transcendence
 
 # Configure environment
