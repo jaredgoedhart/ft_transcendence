@@ -111,7 +111,7 @@ const UserStats: React.FC<UserStatsProperties> = ({ user_id }) =>
         for (const match of sorted_matches)
         {
             running_matches++;
-            const is_winner = match.winner_id === user_id;
+            const is_winner = match.player1_score > match.player2_score;
 
             if (is_winner)
                 running_wins++;
