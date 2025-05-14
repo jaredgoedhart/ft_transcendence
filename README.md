@@ -65,6 +65,8 @@ docker-compose up --build
 
 Access the application at: https://localhost
 
+### Important Note
+This application may not function as expected because the Google Cloud integration has been disconnected due to the project being archived. Please ensure that you update or replace the relevant cloud services if necessary to restore full functionality.
 
 
 ## 📷 Screenshots
