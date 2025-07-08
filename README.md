@@ -185,7 +185,7 @@ Distributed under the MIT License. See [LICENSE](./LICENSE) for more information
 
 ## 👥 Authors
 
-- [Luca Goddijn](https://github.com/DontCallMeLuca)
+- [Luca Goddijn](https://github.com/Arty3)
 - [Oleksii Volzhev](https://github.com/Playstayman)
 - [Jared Goedhart](https://github.com/jaredgoedhart)
 
